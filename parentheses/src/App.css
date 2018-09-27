@@ -9,9 +9,12 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 20px;
   padding: 20px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-title {
@@ -21,8 +24,44 @@
 .App-intro {
   font-size: large;
 }
-
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  min-height: 30vh;
+}
+.form-text {
+  height: 300px;
+  width: 500px;
+  margin: 20px;
+}
+.valid .form-text {
+  background: #a3e8a363;
+}
+.invalid .form-text {
+  background: #fd52528c;
+}
+.form-submit {
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  color: white;
+  background: black;
+  font-size: 20px;
+  font-weight: 500;
+  font-variant-caps: all-petite-caps;
+}
+.form-submit:focus,
+.form-text:focus {
+  outline: 0;
+}
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
